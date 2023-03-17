@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    /* --g1 : rgb(98, 0, 234);
+    --g2 : rgb(236, 64, 122); */
+    --g1 : rgb(160, 196, 78);
+    --g2 : rgb(34, 181, 201);
+}
+
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@keyframes background-animation {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
+
+body {
+    background: linear-gradient(90deg, var(--g1), var(--g2), var(--g1));
+    background-size: 200%;
+    animation: background-animation 5s ease infinite;
+    margin: 0;
+    padding: 0;
+}
